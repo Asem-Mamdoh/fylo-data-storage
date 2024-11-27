@@ -119,6 +119,8 @@ input[type="range"]::-webkit-slider-thumb {
   position: absolute;
   top: -38%;
   right: 7%;
+
+  animation: fadeIn 1s ease-in-out;
 }
 
 .speech-bubble::after {
@@ -131,6 +133,17 @@ input[type="range"]::-webkit-slider-thumb {
   border-color: #FFF #FFF transparent transparent;
 }
 
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 
 .speech-bubble p {
